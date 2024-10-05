@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wonderfull of Trenggalek</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <script defer src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/aos.js"></script>
+  </head>
+  <body class="overflow-x-hidden bg-primary-1 font-sans text-primary-3">
+    <header class="fixed top-0 z-[999] flex w-screen items-center">
+      <div class="container">
+        <div class="flex items-center justify-between py-2">
+          <div>
+            <h2>Trenggalek</h2>
+          </div>
+          <div class="hidden items-center justify-center gap-4 md:flex">
+            <a href="#" class="hover:text-primary-3/60">Beranda</a>
+            <a href="#lokasi" class="hover:text-primary-3/60">Lokasi</a>
+            <a href="#destinasi" class="hover:text-primary-3/60">Destinasi</a>
+          </div>
+          <a href="javascript:void(0)" class="md:hidden">Tombol</a>
+        </div>
+      </div>
+    </header>
+    <!-- HACK: what the hell i'am doing-->
+    <header class="fixed top-0 z-[997] w-screen bg-primary-1">
+      <div class="py-2">
+        <h2 class="opacity-0">Trenggalek</h2>
+      </div>
+    </header>
+    <section class="relative z-[998] h-screen min-h-[720px]" id="banner">
+      <!-- <img -->
+      <!--   src="./assets/img/trenggalek_banner.jpg" -->
+      <!--   alt="trenggalek_banner" -->
+      <!--   class="object-cover h-full object-center" -->
+      <!-- /> -->
+      <div
+        class="h-full w-full bg-cover bg-fixed bg-center bg-no-repeat"
+        style="
+          background-image: url(&quot;./assets/img/trenggalek_banner.jpg&quot;);
+        "
+      ></div>
+
+      <!-- overlay -->
+      <div
+        class="absolute left-0 top-0 h-full w-full bg-gradient-to-t from-primary-1 to-slate-900/40"
+      ></div>
+
+      <!-- title text -->
+      <div class="absolute bottom-36 left-0 w-full">
+        <div class="container">
+          <div
+            class="mb-8 flex flex-col items-start gap-4 md:flex-row md:items-end"
+          >
+            <h1 class="text-5xl font-semibold text-white md:text-7xl">
+              Treng.ga.lek
+            </h1>
+            <h2 class="pb-2 font-light text-gray-500">/trênggalek/</h2>
+          </div>
+          <p class="font-light">
+            kabupaten di Provinsi Jawa Timur, terkenal dengan sebutan Kota
+            Keripik Tempe
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="lokasi"
+      class="container flex h-screen min-h-[720px] flex-col justify-center overflow-x-hidden md:overflow-x-visible"
+    >
+      <div class="flex flex-col items-center justify-center gap-16 lg:flex-row">
+        <div class="aos w-full" data-translatein="-100px 0">
+          <h2 class="mb-8">
+            Dimanakah <span class="text-primary-2">Trenggalek</span> itu?
+          </h2>
+          <p>
+            Trenggalek merupakan Kapupaten di Jawa Timur yang berada di pesisir
+            selatan pulau jawa dan berhadapan langsung dengan Samudra Hindia.
+          </p>
+          <br />
+          <p>
+            Di utara berbatasan dengan Kabupaten Ponorogo, di timur berbatasan
+            dengan Kabupaten Tulungagung, di barat berbatasan dengan Kabupaten
+            Pacitan serta Kabupaten Ponorogo, dan di selatan berhadapan dengan
+            Samudra Hindia.
+          </p>
+          <br />
+          <p>
+            Trenggalek berjarak kira-kira 4 jam perjalan dari ibu kota provinsi
+            jawa timur, Surabaya
+          </p>
+        </div>
+        <div class="aos w-full" data-translatein="100px 0">
+          <!-- <img -->
+          <!--   src="./assets/img/trenggalek_banner.jpg" -->
+          <!--   alt="trenggalek_banner" -->
+          <!--   class="aspect-video flex-1 w-full object-cover object-center" -->
+          <!-- /> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2022225.3715932637!2d111.618942!3d-8.136162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7911286c5a9837%3A0x3027a76e352be10!2sKabupaten%20Trenggalek%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1727839771368!5m2!1sid!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="aspect-[4/3] h-full w-full rounded-lg bg-primary-4"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section
+      id="destinasi"
+      class="container flex h-screen min-h-[720px] justify-center pt-20"
+    >
+      <div class="relative h-full w-full rounded-lg bg-red-500 aos" data-translatein="0 -50%">
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-gradient-to-t from-primary-1"
+        ></div>
+        <div class="absolute bottom-0 left-0 w-full p-4">
+          <div class="mb-10">
+            <h3>Pantai Prigi</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quos
+              obcaecati animi quo veritatis tenetur repudiandae quam totam odio
+              maxime culpa, quas nemo qui ratione cumque tempora est cupiditate
+              vitae!
+            </p>
+          </div>
+          <div class="w-full overflow-x-auto">
+            <div class="flex w-fit items-center gap-4">
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
+              ></div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
+              ></div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
+              ></div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
+              ></div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
+              ></div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen"></section>
+  </body>
+</html>

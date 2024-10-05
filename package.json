@@ -1,0 +1,22 @@
+{
+	"name": "wonderfull-trenggalek",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch",
+		"build": "npx postcss ./src/assets/css/input.css -o ./src/assets/css/output.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.47",
+		"postcss-cli": "^11.0.0",
+		"postcss-preset-env": "^10.0.5",
+		"postcss-short": "^5.0.0",
+		"prettier": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.8",
+		"tailwindcss": "^3.4.13"
+	}
+}
