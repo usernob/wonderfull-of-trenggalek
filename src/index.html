@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id" class="scroll-smooth">
+<html lang="id" class="scroll-smooth overscroll-y-none">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -111,42 +111,123 @@
     </section>
     <section
       id="destinasi"
-      class="container flex h-screen min-h-[720px] justify-center pt-20"
+      class="container flex h-screen min-h-[720px] flex-col items-center justify-center pt-20"
     >
-      <div class="relative h-full w-full rounded-lg bg-red-500 aos" data-translatein="0 -50%">
+      <div class="aos h-full w-full" data-translatein="0 -50%">
+        <h2 class="m-auto mb-8 w-fit">Destinasi Favorit di Trenggalek</h2>
         <div
-          class="absolute left-0 top-0 h-full w-full bg-gradient-to-t from-primary-1"
-        ></div>
-        <div class="absolute bottom-0 left-0 w-full p-4">
-          <div class="mb-10">
-            <h3>Pantai Prigi</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quos
-              obcaecati animi quo veritatis tenetur repudiandae quam totam odio
-              maxime culpa, quas nemo qui ratione cumque tempora est cupiditate
-              vitae!
-            </p>
+          class="relative h-full w-full overflow-hidden rounded-lg bg-red-500"
+        >
+          <div
+            class="absolute bottom-0 left-0 z-[99] h-full w-full bg-gradient-to-t from-primary-1"
+          ></div>
+          <div
+            class="z-[98] flex h-full w-full ease-out"
+            id="image-carousel-dest"
+            style="transition-duration: 500ms; transition-property: transform"
+          >
+            <img
+              class="h-full w-full flex-shrink-0 object-cover object-center"
+              src="./assets/img/pantai-prigi-kapal-nelayan-011.webp"
+              alt="Pantai Prigi"
+            />
+            <img
+              class="h-full w-full flex-shrink-0 object-cover object-center"
+              src="./assets/img/Objek Wisata Goa Lowo.png"
+              alt="Goa Lowo"
+            />
+            <img
+              class="h-full w-full flex-shrink-0 object-cover object-center"
+              src="./assets/img/Banyon-Hill-scaled.jpg"
+              alt="Bukit Banyon"
+            />
+            <img
+              class="h-full w-full flex-shrink-0 object-cover object-center"
+              src="./assets/img/Menikmati-Kesejukan-Akhir-Tahun-2021-di-Destinasi-Wisata-Pantai-Pelang-Trenggalek.jpeg"
+              alt="Pantai Pelang"
+            />
+            <div class="h-full w-full flex-shrink-0 bg-red-500"></div>
+            <div class="h-full w-full flex-shrink-0 bg-yellow-500"></div>
+            <div class="h-full w-full flex-shrink-0 bg-green-500"></div>
           </div>
-          <div class="w-full overflow-x-auto">
-            <div class="flex w-fit items-center gap-4">
-              <div
-                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
-              ></div>
-              <div
-                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
-              ></div>
-              <div
-                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
-              ></div>
-              <div
-                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
-              ></div>
-              <div
-                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
-              ></div>
-              <div
-                class="aspect-[4/3] w-40 rounded-lg bg-red-500 object-cover object-center"
-              ></div>
+          <div class="absolute bottom-0 left-0 z-[100] w-full p-4">
+            <div class="mb-10" id="content-dest">
+              <h3>Pantai Prigi</h3>
+              <p>
+                Pantai Prigi adalah salah satu pantai terpopuler di Trenggalek.
+                Dikenal dengan keindahan alamnya, pantai ini menawarkan pasir
+                putih, ombak yang tenang, dan pemandangan sunset yang menawan.
+                Terdapat juga fasilitas seperti warung makan dan penginapan di
+                sekitar pantai.
+              </p>
+            </div>
+            <div class="w-full overflow-x-auto">
+              <div class="flex w-fit items-center gap-4" id="flex-image-dest">
+                <div
+                  class="dest-image-active aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                  data-index="0"
+                  style="
+                    background-image: url(&quot;./assets/img/pantai-prigi-kapal-nelayan-011.webp&quot;);
+                  "
+                >
+                  <h3 hidden aria-hidden="true">Pantai Prigi</h3>
+                  <p hidden aria-hidden="true">
+                    Pantai Prigi adalah salah satu pantai terpopuler di
+                    Trenggalek. Dikenal dengan keindahan alamnya, pantai ini
+                    menawarkan pasir putih, ombak yang tenang, dan pemandangan
+                    sunset yang menawan. Terdapat juga fasilitas seperti warung
+                    makan dan penginapan di sekitar pantai.
+                  </p>
+                </div>
+                <div
+                  class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                  data-index="1"
+                  style="
+                    background-image: url(&quot;./assets/img/Objek\ Wisata\ Goa\ Lowo.png&quot;);
+                  "
+                >
+                  <h3 hidden aria-hidden="true">Goa Lowo</h3>
+                  <p hidden aria-hidden="true">
+                    Goa Lowo, yang berarti "Goa Kelelawar," adalah goa yang
+                    terkenal dengan keindahan stalaktit dan stalagmit. Selain
+                    itu, goa ini juga merupakan tempat tinggal bagi banyak
+                    kelelawar. Pengunjung dapat menjelajahi goa ini dengan
+                    pemandu.
+                  </p>
+                </div>
+                <div
+                  class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                  data-index="2"
+                  style="
+                    background-image: url(&quot;./assets/img/Banyon-Hill-scaled.jpg&quot;);
+                  "
+                >
+                  <h3 hidden aria-hidden="true">Bukit Banyon</h3>
+                  <p hidden aria-hidden="true">
+                    Bukit ini menawarkan hamparan awan yang indah, tak heran
+                    kenapa dijuluki sebagai negeri di atas awan. Hal paling
+                    indah ketika mengunjungi Bukit Banyon adalah suasana sunrise
+                    pagi hari. Cahaya kuning matahari terbit menghiasi semua
+                    rerumputan dan embun pagi di puncak Bukit Banyon. Kehadiran
+                    sinar pagi ini sangatlah menakjubkan.
+                  </p>
+                </div>
+                <div
+                  class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                  data-index="3"
+                  style="
+                    background-image: url(&quot;./assets/img/Menikmati-Kesejukan-Akhir-Tahun-2021-di-Destinasi-Wisata-Pantai-Pelang-Trenggalek.jpeg&quot;);
+                  "
+                >
+                  <h3 hidden aria-hidden="true">Pantai Pelang</h3>
+                  <p hidden aria-hidden="true">
+                    Pantai Pelang terkenal dengan panorama alam yang eksotis.
+                    Pantai ini dikelilingi tebing dan hutan, serta memiliki air
+                    laut yang jernih. Cocok untuk bersantai, snorkeling, dan
+                    menjelajahi keindahan bawah lautnya.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

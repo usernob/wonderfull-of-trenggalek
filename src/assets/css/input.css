@@ -25,3 +25,7 @@
 .aos {
   @apply transition-all duration-700 ease-out;
 }
+
+.dest-image-active {
+  @apply border-2 border-primary-3;
+}
