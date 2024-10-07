@@ -1,14 +1,33 @@
 <!doctype html>
-<html lang="id" class="scroll-smooth overscroll-y-none">
+<html lang="id" class="overscroll-y-none scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wonderfull of Trenggalek</title>
     <link href="./assets/css/output.css" rel="stylesheet" />
+    <script>
+      if (!document.createElement("template").content) {
+        document.write("Your browser does not supports template!");
+      }
+    </script>
     <script defer src="./assets/js/index.js"></script>
     <script defer src="./assets/js/aos.js"></script>
+    <script defer src="./assets/js/nav.js"></script>
   </head>
-  <body class="overflow-x-hidden bg-primary-1 font-sans text-primary-3">
+  <body
+    class="overflow-x-hidden bg-primary-1 font-sans text-primary-3"
+  >
+    <div
+      class="fixed left-0 top-0 z-[999] h-screen w-full flex-col items-center justify-center bg-primary-1/80"
+      style="display: none"
+      id="nav-overlay"
+    >
+      <div class="flex flex-col items-center gap-8">
+        <a href="#" class="hover:text-primary-3/60">Beranda</a>
+        <a href="#lokasi" class="hover:text-primary-3/60">Lokasi</a>
+        <a href="#destinasi" class="hover:text-primary-3/60">Destinasi</a>
+      </div>
+    </div>
     <header class="fixed top-0 z-[999] flex w-screen items-center">
       <div class="container">
         <div class="flex items-center justify-between py-2">
@@ -20,7 +39,40 @@
             <a href="#lokasi" class="hover:text-primary-3/60">Lokasi</a>
             <a href="#destinasi" class="hover:text-primary-3/60">Destinasi</a>
           </div>
-          <a href="javascript:void(0)" class="md:hidden">Tombol</a>
+          <button class="md:hidden" id="nav-menu">
+            <svg
+              id="x-mark"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="z-[1001] size-6"
+              style="display: none"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+
+            <svg
+              id="b-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -116,7 +168,7 @@
       <div class="aos h-full w-full" data-translatein="0 -50%">
         <h2 class="m-auto mb-8 w-fit">Destinasi Favorit di Trenggalek</h2>
         <div
-          class="relative h-full w-full overflow-hidden rounded-lg bg-red-500"
+          class="relative h-[80%] w-full overflow-hidden rounded-lg bg-red-500"
         >
           <div
             class="absolute bottom-0 left-0 z-[99] h-full w-full bg-gradient-to-t from-primary-1"
@@ -162,7 +214,10 @@
               </p>
             </div>
             <div class="w-full overflow-x-auto">
-              <div class="flex w-fit items-center gap-4" id="flex-image-dest">
+              <div
+                class="flex w-fit cursor-pointer items-center gap-4"
+                id="flex-image-dest"
+              >
                 <div
                   class="dest-image-active aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
                   data-index="0"
