@@ -2,8 +2,8 @@
 	"name": "wonderfull-trenggalek",
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch",
-		"build": "npx postcss ./src/assets/css/input.css -o ./src/assets/css/output.css"
+		"dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+		"build": "npx postcss ./assets/css/input.css -o ./assets/css/output.css"
 	},
 	"keywords": [],
 	"author": "",
