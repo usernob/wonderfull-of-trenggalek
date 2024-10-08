@@ -5,18 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wonderfull of Trenggalek</title>
     <link href="./assets/css/output.css" rel="stylesheet" />
-    <script>
-      if (!document.createElement("template").content) {
-        document.write("Your browser does not supports template!");
-      }
-    </script>
     <script defer src="./assets/js/destination.js"></script>
     <script defer src="./assets/js/aos.js"></script>
     <script defer src="./assets/js/nav.js"></script>
   </head>
-  <body
-    class="overflow-x-hidden bg-primary-1 font-sans text-primary-3"
-  >
+  <body class="overflow-x-hidden bg-primary-1 font-sans text-primary-3">
     <div
       class="fixed left-0 top-0 z-[999] h-screen w-full flex-col items-center justify-center bg-primary-1/80"
       style="display: none"
@@ -26,6 +19,7 @@
         <a href="#" class="hover:text-primary-3/60">Beranda</a>
         <a href="#lokasi" class="hover:text-primary-3/60">Lokasi</a>
         <a href="#destinasi" class="hover:text-primary-3/60">Destinasi</a>
+        <a href="#kuliner" class="hover:text-primary-3/60">Kuliner</a>
       </div>
     </div>
     <header class="fixed top-0 z-[999] flex w-screen items-center">
@@ -38,6 +32,7 @@
             <a href="#" class="hover:text-primary-3/60">Beranda</a>
             <a href="#lokasi" class="hover:text-primary-3/60">Lokasi</a>
             <a href="#destinasi" class="hover:text-primary-3/60">Destinasi</a>
+            <a href="#kuliner" class="hover:text-primary-3/60">Kuliner</a>
           </div>
           <button class="md:hidden" id="nav-menu">
             <svg
@@ -83,11 +78,6 @@
       </div>
     </header>
     <section class="relative z-[998] h-screen min-h-[720px]" id="banner">
-      <!-- <img -->
-      <!--   src="./assets/img/trenggalek_banner.jpg" -->
-      <!--   alt="trenggalek_banner" -->
-      <!--   class="object-cover h-full object-center" -->
-      <!-- /> -->
       <div
         class="h-full w-full bg-cover bg-fixed bg-center bg-no-repeat"
         style="
@@ -145,11 +135,6 @@
           </p>
         </div>
         <div class="aos w-full" data-translatein="100px 0">
-          <!-- <img -->
-          <!--   src="./assets/img/trenggalek_banner.jpg" -->
-          <!--   alt="trenggalek_banner" -->
-          <!--   class="aspect-video flex-1 w-full object-cover object-center" -->
-          <!-- /> -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2022225.3715932637!2d111.618942!3d-8.136162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7911286c5a9837%3A0x3027a76e352be10!2sKabupaten%20Trenggalek%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1727839771368!5m2!1sid!2sid"
             style="border: 0"
@@ -165,123 +150,123 @@
       id="destinasi"
       class="container flex h-screen min-h-[720px] flex-col items-center justify-center pt-20"
     >
-      <div class="aos h-full w-full" data-translatein="0 -50%">
-        <h2 class="m-auto mb-8 w-fit">Destinasi Favorit di Trenggalek</h2>
+      <h2 class="aos m-auto mb-8 w-fit" data-translatein="0 -50%">
+        Destinasi Favorit di Trenggalek
+      </h2>
+      <div
+        class="aos relative h-[90%] w-full overflow-hidden rounded-lg bg-red-500"
+        data-translatein="0 50%"
+      >
         <div
-          class="relative h-[80%] w-full overflow-hidden rounded-lg bg-red-500"
+          class="absolute bottom-0 left-0 z-[99] h-full w-full bg-gradient-to-t from-primary-1"
+        ></div>
+        <div
+          class="z-[98] flex h-full w-full ease-out"
+          id="image-carousel-dest"
+          style="transition-duration: 500ms; transition-property: transform"
         >
-          <div
-            class="absolute bottom-0 left-0 z-[99] h-full w-full bg-gradient-to-t from-primary-1"
-          ></div>
-          <div
-            class="z-[98] flex h-full w-full ease-out"
-            id="image-carousel-dest"
-            style="transition-duration: 500ms; transition-property: transform"
-          >
-            <img
-              class="h-full w-full flex-shrink-0 object-cover object-center"
-              src="./assets/img/pantai-prigi-kapal-nelayan-011.webp"
-              alt="Pantai Prigi"
-            />
-            <img
-              class="h-full w-full flex-shrink-0 object-cover object-center"
-              src="./assets/img/Objek Wisata Goa Lowo.png"
-              alt="Goa Lowo"
-            />
-            <img
-              class="h-full w-full flex-shrink-0 object-cover object-center"
-              src="./assets/img/Banyon-Hill-scaled.jpg"
-              alt="Bukit Banyon"
-            />
-            <img
-              class="h-full w-full flex-shrink-0 object-cover object-center"
-              src="./assets/img/Menikmati-Kesejukan-Akhir-Tahun-2021-di-Destinasi-Wisata-Pantai-Pelang-Trenggalek.jpeg"
-              alt="Pantai Pelang"
-            />
-            <div class="h-full w-full flex-shrink-0 bg-red-500"></div>
-            <div class="h-full w-full flex-shrink-0 bg-yellow-500"></div>
-            <div class="h-full w-full flex-shrink-0 bg-green-500"></div>
+          <img
+            class="h-full w-full flex-shrink-0 object-cover object-center"
+            src="./assets/img/pantai-prigi-kapal-nelayan-011.webp"
+            alt="Pantai Prigi"
+          />
+          <img
+            class="h-full w-full flex-shrink-0 object-cover object-center"
+            src="./assets/img/Objek Wisata Goa Lowo.png"
+            alt="Goa Lowo"
+          />
+          <img
+            class="h-full w-full flex-shrink-0 object-cover object-center"
+            src="./assets/img/Banyon-Hill-scaled.jpg"
+            alt="Bukit Banyon"
+          />
+          <img
+            class="h-full w-full flex-shrink-0 object-cover object-center"
+            src="./assets/img/Menikmati-Kesejukan-Akhir-Tahun-2021-di-Destinasi-Wisata-Pantai-Pelang-Trenggalek.jpeg"
+            alt="Pantai Pelang"
+          />
+          <div class="h-full w-full flex-shrink-0 bg-red-500"></div>
+          <div class="h-full w-full flex-shrink-0 bg-yellow-500"></div>
+          <div class="h-full w-full flex-shrink-0 bg-green-500"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 z-[100] w-full p-4">
+          <div class="mb-10" id="content-dest">
+            <h3>Pantai Prigi</h3>
+            <p>
+              Pantai Prigi adalah salah satu pantai terpopuler di Trenggalek.
+              Dikenal dengan keindahan alamnya, pantai ini menawarkan pasir
+              putih, ombak yang tenang, dan pemandangan sunset yang menawan.
+              Terdapat juga fasilitas seperti warung makan dan penginapan di
+              sekitar pantai.
+            </p>
           </div>
-          <div class="absolute bottom-0 left-0 z-[100] w-full p-4">
-            <div class="mb-10" id="content-dest">
-              <h3>Pantai Prigi</h3>
-              <p>
-                Pantai Prigi adalah salah satu pantai terpopuler di Trenggalek.
-                Dikenal dengan keindahan alamnya, pantai ini menawarkan pasir
-                putih, ombak yang tenang, dan pemandangan sunset yang menawan.
-                Terdapat juga fasilitas seperti warung makan dan penginapan di
-                sekitar pantai.
-              </p>
-            </div>
-            <div class="w-full overflow-x-auto">
+          <div class="w-full overflow-x-auto">
+            <div
+              class="flex w-fit cursor-pointer items-center gap-4"
+              id="flex-image-dest"
+            >
               <div
-                class="flex w-fit cursor-pointer items-center gap-4"
-                id="flex-image-dest"
+                class="dest-image-active aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                data-index="0"
+                style="
+                  background-image: url(&quot;./assets/img/pantai-prigi-kapal-nelayan-011.webp&quot;);
+                "
               >
-                <div
-                  class="dest-image-active aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
-                  data-index="0"
-                  style="
-                    background-image: url(&quot;./assets/img/pantai-prigi-kapal-nelayan-011.webp&quot;);
-                  "
-                >
-                  <h3 hidden aria-hidden="true">Pantai Prigi</h3>
-                  <p hidden aria-hidden="true">
-                    Pantai Prigi adalah salah satu pantai terpopuler di
-                    Trenggalek. Dikenal dengan keindahan alamnya, pantai ini
-                    menawarkan pasir putih, ombak yang tenang, dan pemandangan
-                    sunset yang menawan. Terdapat juga fasilitas seperti warung
-                    makan dan penginapan di sekitar pantai.
-                  </p>
-                </div>
-                <div
-                  class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
-                  data-index="1"
-                  style="
-                    background-image: url(&quot;./assets/img/Objek\ Wisata\ Goa\ Lowo.png&quot;);
-                  "
-                >
-                  <h3 hidden aria-hidden="true">Goa Lowo</h3>
-                  <p hidden aria-hidden="true">
-                    Goa Lowo, yang berarti "Goa Kelelawar," adalah goa yang
-                    terkenal dengan keindahan stalaktit dan stalagmit. Selain
-                    itu, goa ini juga merupakan tempat tinggal bagi banyak
-                    kelelawar. Pengunjung dapat menjelajahi goa ini dengan
-                    pemandu.
-                  </p>
-                </div>
-                <div
-                  class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
-                  data-index="2"
-                  style="
-                    background-image: url(&quot;./assets/img/Banyon-Hill-scaled.jpg&quot;);
-                  "
-                >
-                  <h3 hidden aria-hidden="true">Bukit Banyon</h3>
-                  <p hidden aria-hidden="true">
-                    Bukit ini menawarkan hamparan awan yang indah, tak heran
-                    kenapa dijuluki sebagai negeri di atas awan. Hal paling
-                    indah ketika mengunjungi Bukit Banyon adalah suasana sunrise
-                    pagi hari. Cahaya kuning matahari terbit menghiasi semua
-                    rerumputan dan embun pagi di puncak Bukit Banyon. Kehadiran
-                    sinar pagi ini sangatlah menakjubkan.
-                  </p>
-                </div>
-                <div
-                  class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
-                  data-index="3"
-                  style="
-                    background-image: url(&quot;./assets/img/Menikmati-Kesejukan-Akhir-Tahun-2021-di-Destinasi-Wisata-Pantai-Pelang-Trenggalek.jpeg&quot;);
-                  "
-                >
-                  <h3 hidden aria-hidden="true">Pantai Pelang</h3>
-                  <p hidden aria-hidden="true">
-                    Pantai Pelang terkenal dengan panorama alam yang eksotis.
-                    Pantai ini dikelilingi tebing dan hutan, serta memiliki air
-                    laut yang jernih. Cocok untuk bersantai, snorkeling, dan
-                    menjelajahi keindahan bawah lautnya.
-                  </p>
-                </div>
+                <h3 hidden aria-hidden="true">Pantai Prigi</h3>
+                <p hidden aria-hidden="true">
+                  Pantai Prigi adalah salah satu pantai terpopuler di
+                  Trenggalek. Dikenal dengan keindahan alamnya, pantai ini
+                  menawarkan pasir putih, ombak yang tenang, dan pemandangan
+                  sunset yang menawan. Terdapat juga fasilitas seperti warung
+                  makan dan penginapan di sekitar pantai.
+                </p>
+              </div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                data-index="1"
+                style="
+                  background-image: url(&quot;./assets/img/Objek\ Wisata\ Goa\ Lowo.png&quot;);
+                "
+              >
+                <h3 hidden aria-hidden="true">Goa Lowo</h3>
+                <p hidden aria-hidden="true">
+                  Goa Lowo, yang berarti "Goa Kelelawar," adalah goa yang
+                  terkenal dengan keindahan stalaktit dan stalagmit. Selain itu,
+                  goa ini juga merupakan tempat tinggal bagi banyak kelelawar.
+                  Pengunjung dapat menjelajahi goa ini dengan pemandu.
+                </p>
+              </div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                data-index="2"
+                style="
+                  background-image: url(&quot;./assets/img/Banyon-Hill-scaled.jpg&quot;);
+                "
+              >
+                <h3 hidden aria-hidden="true">Bukit Banyon</h3>
+                <p hidden aria-hidden="true">
+                  Bukit ini menawarkan hamparan awan yang indah, tak heran
+                  kenapa dijuluki sebagai negeri di atas awan. Hal paling indah
+                  ketika mengunjungi Bukit Banyon adalah suasana sunrise pagi
+                  hari. Cahaya kuning matahari terbit menghiasi semua rerumputan
+                  dan embun pagi di puncak Bukit Banyon. Kehadiran sinar pagi
+                  ini sangatlah menakjubkan.
+                </p>
+              </div>
+              <div
+                class="aspect-[4/3] w-40 rounded-lg bg-cover bg-center bg-no-repeat"
+                data-index="3"
+                style="
+                  background-image: url(&quot;./assets/img/Menikmati-Kesejukan-Akhir-Tahun-2021-di-Destinasi-Wisata-Pantai-Pelang-Trenggalek.jpeg&quot;);
+                "
+              >
+                <h3 hidden aria-hidden="true">Pantai Pelang</h3>
+                <p hidden aria-hidden="true">
+                  Pantai Pelang terkenal dengan panorama alam yang eksotis.
+                  Pantai ini dikelilingi tebing dan hutan, serta memiliki air
+                  laut yang jernih. Cocok untuk bersantai, snorkeling, dan
+                  menjelajahi keindahan bawah lautnya.
+                </p>
               </div>
             </div>
           </div>
@@ -289,6 +274,50 @@
       </div>
     </section>
 
-    <section class="h-screen"></section>
+    <section
+      id="kuliner"
+      class="container h-screen mt-20 flex min-h-[720px] flex-col items-center justify-center"
+    >
+      <h2 class="aos mb-10" data-translatein="0 -50%">
+        Kuliner Khas Trenggalek
+      </h2>
+      <div
+        class="aos grid w-full auto-cols-fr grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+        data-translatein="0 50%"
+      >
+        <div class="w-full">
+          <img
+            src="./assets/img/kripik_tempe.jpg"
+            alt="Kripik Tempe"
+            class="aspect-square w-full rounded-full object-cover object-center"
+          />
+          <h3 class="mx-auto mt-6 w-fit">Kripik Tempe</h3>
+        </div>
+        <div class="w-full">
+          <img
+            src="./assets/img/lodho.jpeg"
+            alt="Ayam Lodho"
+            class="aspect-square w-full rounded-full object-cover object-center"
+          />
+          <h3 class="mx-auto mt-6 w-fit">Ayam Lodho</h3>
+        </div>
+        <div class="w-full">
+          <img
+            src="./assets/img/nasi-gegok-mbah-tumirah.jpg"
+            alt="Nasi Gegok"
+            class="aspect-square w-full rounded-full object-cover object-center"
+          />
+          <h3 class="mx-auto mt-6 w-fit">Nasi Gegok</h3>
+        </div>
+        <div class="w-full">
+          <img
+            src="./assets/img/tiwul.jpg"
+            alt="Nasi Tiwul"
+            class="aspect-square w-full rounded-full object-cover object-center"
+          />
+          <h3 class="mx-auto mt-6 w-fit">Nasi Tiwul</h3>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
