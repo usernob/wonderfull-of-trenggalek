@@ -641,11 +641,14 @@ p{
 .min-h-\[720px\]{
   min-height: 720px !important;
 }
+.w-2{
+  width: 0.5rem !important;
+}
 .w-40{
   width: 10rem !important;
 }
-.w-\[30rem\]{
-  width: 30rem !important;
+.w-\[15rem\]{
+  width: 15rem !important;
 }
 .w-fit{
   width: -moz-fit-content !important;
@@ -692,6 +695,9 @@ p{
 }
 .flex-col{
   flex-direction: column !important;
+}
+.flex-wrap{
+  flex-wrap: wrap !important;
 }
 .items-start{
   align-items: flex-start !important;
@@ -843,6 +849,10 @@ p{
   font-size: 1.875rem !important;
   line-height: 2.25rem !important;
 }
+.text-4xl{
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+}
 .text-5xl{
   font-size: 3rem !important;
   line-height: 1 !important;
@@ -854,6 +864,10 @@ p{
 .text-base{
   font-size: 1rem !important;
   line-height: 1.5rem !important;
+}
+.text-lg{
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
 }
 .text-xl{
   font-size: 1.25rem !important;
@@ -949,8 +963,8 @@ p{
   .md\:hidden{
     display: none !important;
   }
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  .md\:w-\[30rem\]{
+    width: 30rem !important;
   }
   .md\:flex-row{
     flex-direction: row !important;
