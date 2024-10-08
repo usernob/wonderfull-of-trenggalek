@@ -13,12 +13,6 @@ const callback = (entries) => {
 			target.style.opacity = 1;
 			target.style.transform = "translate(0)";
 		}
-		// } else {
-		// 	if (window.scrollY <= window.innerHeight) {
-		// 		target.style.opacity = 0;
-		// 		setTranslate(target, target.dataset.translatein);
-		// 	}
-		// }
 	}
 };
 
